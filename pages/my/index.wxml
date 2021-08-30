@@ -1,0 +1,89 @@
+<!--pages/my/index.wxml-->
+<view class="container_page">
+  <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+  <view class="container" style="padding-top:{{height}}px">
+    <view class="user">
+      <view class="user_avatar">
+        <image src="" class="avatar"></image>
+        <view class="userName">哈利路亚</view>
+      </view>
+      <view class="data">
+        <view class="data_left" bindtap="gotoDetail">
+          <text class="num">1234</text>
+          <view class="text">积分<image class="more_icon" src="/images/icon_more2@2x.png"></image>
+          </view>
+        </view>
+        <view class="data_left">
+          <text class="num">123</text>
+          <view class="text">幸运值<image class="more_icon" src="/images/icon_more2@2x.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="signIn">
+      <view class="sign_title">签到集幸运</view>
+      <view class="sign_progress">
+        <view class="progress">
+          <view class="num" wx:for="{{signData}}" wx:key="{{index}}">
+            <view class="num_left">
+              <text class="inte_num {{item.type===0?'gray_num':''}}">+{{item.num}}</text>
+              <view class="inte_icon">
+                <image src="/images/icon_huode@2x.png" class="select_icon" wx:if="{{item.type===1}}"></image>
+                <text class="gray" wx:if="{{item.type===0}}"></text>
+                <view class="line" wx:if="{{index<signData.length-1}}"></view>
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="sign_btn">签到</view>
+      </view>
+    </view>
+    <view class="my_list">
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_baibao@2x.png"></image>
+          <text class="item_name">我的背包</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_dizhi@2x.png"></image>
+          <text class="item_name">地址管理</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_order@2x.png"></image>
+          <text class="item_name">我的订单</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_yaoqing@2x.png"></image>
+          <text class="item_name">我的邀请</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+    </view>
+    <view class="my_list">
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_kefu@2x.png"></image>
+          <text class="item_name">联系客服</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+      <view class="list">
+        <view class="list_left">
+          <image class="my_icon" src="/images/icon_me_problem@2x.png"></image>
+          <text class="item_name">常见问题</text>
+        </view>
+        <image class="more_icon" src="/images/icon_more2@2x.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

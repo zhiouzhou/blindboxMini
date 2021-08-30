@@ -1,0 +1,43 @@
+<!--pages/drawBlindBox/index.wxml-->
+<view class="container">
+  <view class="top">
+    <!-- 背景 -->
+    <image class="bg" src=""></image>
+    <view class="box_title">
+      <text class="title">49元抽BOB色彩系列</text>
+      <text class="detail_button">商品详情</text>
+    </view>
+  </view>
+  <view class="content">
+    <view class="content_top">
+      <view class="tips">抽盲盒</view>
+      <view class="num">NO 202109163232123</view>
+    </view>
+    <view class="box_list">
+      <view class="list" wx:for="{{boxList}}" bindtap="openBox">
+        <image class="no_image" wx:if="{{item.type===0 || item.type===3 || item.type===4}}"
+          src="/images/hezi_bg@2x.png"></image>
+        <text class="list_num" wx:if="{{item.type===0}}">{{item.num}}</text>
+        <image class="type_icon" src="/images/bar_shouchu@2x.png" wx:if="{{item.type===3}}"></image>
+        <image class="type_icon" src="/images/bar_chaozhi@2x.png" wx:if="{{item.type===4}}"></image>
+
+        <image class="box_image" src="/images/box_image.png" wx:if="{{item.type===1 ||item.type===2 }}"></image>
+        <view class="mask" wx:if="{{item.type===2}}"></view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <image class="footer_bg" src="/images/bottom.png"></image>
+    <view class="footer_content">
+      <view class="footer_text">
+        购买记录
+        <image class="more_icon" src="/images/icon_more_button@2x.png"></image>
+      </view>
+      <view class="footer_button">
+        <view class="btn">端盒</view>
+        <view class="btn btn_1">换一盒</view>
+      </view>
+    </view>
+  </view>
+
+</view>

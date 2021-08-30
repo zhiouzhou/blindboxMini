@@ -1,0 +1,80 @@
+/* pages/integralDetail/index.wxss */
+
+.num{
+  font-size: 56rpx;
+  color: #222;
+  font-weight: bold;
+  margin: 42rpx 40rpx 34rpx;
+}
+.num_title{
+  font-size: 28rpx;
+  font-weight: normal;
+  padding-left: 20rpx;
+}
+
+.inte{
+  background: #fff;
+  border-radius: 24rpx 24rpx 0 0;
+  height: 100vh;
+}
+
+.tab_list{
+  display: flex;
+  align-items: center;
+  padding: 32rpx;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.tab{
+  color: rgba(0,0,0,.4);
+  font-size: 32rpx;
+  margin-right: 48rpx;
+  font-weight: bold;
+}
+
+.selectTab{
+  color: #222;
+  font-size: 40rpx;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 8rpx;
+}
+.selectTab::after{
+  content:'';
+  width: 48rpx;
+  height: 8rpx;
+  background:#5233FF;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -24rpx;
+}
+
+.inte_list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 32rpx;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.box_name{
+  display: flex;
+  flex-direction: column;
+}
+
+.name{
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-bottom: 8rpx;
+}
+.date{
+  color: rgba(0,0,0,.4);
+  font-size: 24rpx;
+}
+
+.inte_num{
+  font-size: 40rpx;
+  color: #FF2727;
+  font-weight: bold;
+}

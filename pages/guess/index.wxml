@@ -1,0 +1,46 @@
+<!--pages/openBox/index.wxml-->
+<view class="container">
+  <view class="user_content">
+    <view class="user">
+      <image src="" class="avatar"></image>
+      <text class="uerName">周周</text>
+    </view>
+    <text class="uerName">正在竞猜...</text>
+  </view>
+  <view class="box_image">
+    <image src="/images/TB_01@2x.png"></image>
+  </view>
+
+  <view class="box_title">
+    <text class="title">BOB色彩系列</text>
+    <text class="num">NO 202109163232123-1</text>
+  </view>
+  <view class="count_down">
+    竞猜倒计时：2:30
+  </view>
+  <view class="open_box">
+    <view class="btn_content {{userType===1?'my_btn':''}}" bindtap="showModal">
+      猜一猜
+    </view>
+    <view class="btn_content blue" wx:if="{{userType===0}}">
+      立即拆开
+    </view>
+
+
+  </view>
+</view>
+
+<!-- 购买弹框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<!-- 从上至下的弹窗-->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class="dialog_header">猜一猜</view>
+  <view class="dialog_body">
+    <view class="guess_tips">盒子里是哪一个呢，选一个试试看</view>
+    <view class="guess_box">
+      <image class="box_icon" src="/images/hezi_bg@2x.png" wx:for="{{8}}"></image>
+    </view>
+  </view>
+ 
+</view>

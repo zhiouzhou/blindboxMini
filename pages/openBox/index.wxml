@@ -1,0 +1,61 @@
+<!--pages/openBox/index.wxml-->
+<view class="container">
+  <view class="box_image">
+    <image src="/images/TB_01@2x.png"></image>
+  </view>
+
+  <view class="box_title">
+    <text class="title">BOB色彩系列</text>
+    <text class="num">NO 202109163232123-1</text>
+  </view>
+  <view class="open_box">
+    <view class="btn_content">
+      <image class="btn" src="/images/icon_huanyige@2x.png"></image>
+      <text class="btn_text">换一个</text>
+    </view>
+    <view class="btn_content">
+      <image class="btn" src="/images/icon_toushi@2x.png"></image>
+      <text class="btn_text">透视</text>
+    </view>
+    <view class="btn_content">
+      <image class="btn" src="/images/icon_tip@2x.png"></image>
+      <text class="btn_text">提示</text>
+    </view>
+
+
+  </view>
+  <view class="help">
+    <view class="help_left" bindtap="gotoHelp">
+      <image src="/images/liwu-5@2x.png" class="left_icon"></image>
+      <text class="left_text">好友助力1元抽盒</text>
+    </view>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+  <view class="buy_btn" bindtap="showModal">就买这个</view>
+</view>
+
+<!-- 购买弹框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<!-- 从上至下的弹窗-->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class="dialog_header">订单确认</view>
+  <view class="dialog_body">
+    <view class="body_left">
+      <image class="body_box_image" src="/images/TB_01@2x.png"></image>
+      <view class="title_content">
+        <text class="category">BOB色彩系列</text>
+        <view class="body_box_title">Sun And Trees</view>
+      </view>
+    </view>
+    <view class="body_right">
+      <view class="price">¥89</view>
+      <view class="price">*1</view>
+    </view>
+  </view>
+  <view class="total">
+    <view class="total_title">合计</view>
+    <view class="total_price">89.00</view>
+  </view>
+  <view class="pay_btn" bindtap="pay">立即支付</view>
+</view>

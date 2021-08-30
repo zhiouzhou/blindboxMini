@@ -1,0 +1,17 @@
+<!--pages/integralDetail/index.wxml-->
+<view class="container">
+  <view class="num">1324<text class="num_title">积分</text></view>
+  <view class="inte">
+    <view class="tab_list">
+      <view class="tab {{selectTab==0?'selectTab':''}}" bindtap="checkTab" data-index="0">获取记录</view>
+      <view class="tab {{selectTab==1?'selectTab':''}}" bindtap="checkTab" data-index="1">消费记录</view>
+    </view>
+    <view class="inte_list" wx:for="{{inteList}}">
+      <view class="box_name">
+        <text class="name">{{item.name}}</text>
+        <text class="date">{{item.date}}</text>
+      </view>
+      <view class="inte_num">{{selectTab==0?'+':'-'}}{{item.value}}</view>
+    </view>
+  </view>
+</view>

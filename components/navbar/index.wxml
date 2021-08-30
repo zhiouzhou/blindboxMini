@@ -1,0 +1,28 @@
+<!--components/navbar/index.wxml-->
+<!-- <view class='nav-wrap' style='height: {{height*2 + 20}}px;background:{{navbarData.color}};padding-bottom:5px'>
+  <image wx:if="{{navbarData.showCapsule===1}}" class="logo" src="/images/logo@2x.png" style="margin-top:{{-34+20}}rpx">
+  </image>
+  <view class='nav-title' style='line-height: {{height*2 + 44}}px;color:{{navbarData.fontColor}};'>
+    {{navbarData.title}}
+  </view>
+  <image wx:if='{{navbarData.address != "false"}}' class="backgroundimg" src="{{navbarData.address}}"
+    bindload="imgLoaded" style="width:{{imageWidth}}px;height:{{imageHeight}}px" mode="aspectFill" />
+</view> -->
+<!--components/navbar/index.wxml-->
+<view class='nav-wrap' style='height: {{height*2 + 20}}px;background:{{navbarData.color}};padding-bottom:5px'>
+  <!-- // 导航栏 中间的标题 -->
+  <view class='nav-title' style='line-height: {{height*2 + 44}}px;color:{{navbarData.fontColor}};'>
+    {{navbarData.title}}
+  </view>
+  <view style='display: flex; justify-content: space-around;flex-direction: column'>
+    <!-- // 导航栏  左上角的返回按钮 -->
+    <!-- //  其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，首页不显示 -->
+    <view class='nav-capsule' style='height: {{height*2 + 44}}px; padding-bottom:5px'
+      wx:if='{{navbarData.showCapsule}}'>
+      <!-- navbarData.white是控制按钮颜色的，因为背景有深浅色,返回按钮自己找图片 -->
+        <image bindtap='_navback' src='/images/logo@2x.png' mode='aspectFit' class='back-pre'></image>
+    </view>
+  </view>
+</view>
+<image wx:if='{{navbarData.address != "false"}}' class="backgroundimg" src="{{navbarData.address}}" bindload="imgLoaded"
+  style="width:{{imageWidth}}px;height:{{imageHeight}}px"  mode="aspectFill"/>

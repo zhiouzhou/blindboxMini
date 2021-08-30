@@ -1,0 +1,28 @@
+<!--pages/openBox/index.wxml-->
+<view class="container">
+  <view class="success_tips">
+    <image src="/images/icon_chengong@2x.png" class="success_icon"></image>
+    <text class="tips">购买成功啦！</text>
+  </view>
+  <view class="remark">立即邀请朋友们来竞猜吧，猜对的可以获取幸运值奖励哦</view>
+  <view class="box_image">
+    <image src="/images/TB_01@2x.png"></image>
+  </view>
+
+  <view class="box_title">
+    <text class="title">BOB色彩系列</text>
+    <text class="num">NO 202109163232123-1</text>
+  </view>
+  <view class="open_box">
+    <view class="btn_content" bindtap="gotoGuess">
+      发起竞猜
+    </view>
+    <view class="btn_content blue">
+     立即拆开
+    </view>
+
+
+  </view>
+</view>
+
+

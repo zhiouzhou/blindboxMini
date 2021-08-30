@@ -1,0 +1,181 @@
+/* pages/openBox/index.wxss */
+page {
+  background: #fff;
+
+}
+
+.container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  width: 100%;
+}
+
+.user_content{
+  display: flex;
+  align-items: center;
+  margin:60rpx 40rpx 32rpx;
+  background: #F3F4F5;
+  border-radius: 16rpx;
+  height: 124rpx;
+  justify-content: center;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+}
+
+.avatar{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+  background: #999;
+  border-radius: 30rpx;
+}
+
+.uerName{
+  font-size: 28rpx;
+  color: #222;
+  margin-right: 20rpx;
+}
+
+.box_image {
+  width: 100%;
+  height: 640rpx;
+  margin: 0rpx 0 78rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box_image>image{
+  width: 480rpx;
+  height: 100%;
+}
+.box_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  color: #222;
+  padding-bottom: 10rpx;
+}
+
+.num {
+  color: #999;
+  font-size: 24rpx;
+}
+
+.count_down{
+  font-size: 40rpx;
+  color: #FF5454;
+  text-align: center;
+  margin-bottom: 164rpx;
+  font-weight: bold;
+}
+
+
+
+.open_box {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 78rpx;
+  margin: 130rpx 40rpx 70rpx 40rpx ;
+}
+
+.btn_content {
+  width: 320rpx;
+  height: 98rpx;
+  text-align: center;
+  line-height: 98rpx;
+  font-size: 32rpx;
+  color: #1F1F52;
+  background: #FFE50B;
+  border-radius: 49rpx;
+  font-weight: bold;
+}
+
+.my_btn{
+  width: 100%;
+}
+
+.blue{
+  background: #5233FF;
+  color: #fff;
+}
+
+.btn {
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.btn_text {
+  font-size: 28rpx;
+  padding-top: 2rpx;
+}
+
+/*蒙层的结构，目的是覆盖整个手机界面*/
+.commodity_screen {     
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+/*对话框结构*/
+.commodity_attr_box {
+  width: 100%;
+  /* height:200rpx; */
+  padding: 64rpx 32rpx 88rpx ;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 24rpx 24rpx 0 0;
+}
+
+.dialog_header{
+  font-size: 40rpx;
+  font-weight: bold;
+  padding-bottom: 22rpx;
+  text-align: center;
+}
+
+.dialog_body{
+  
+
+}
+
+.guess_tips{
+  color: rgba(0,0,0,.4);
+  font-size: 28rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+.guess_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.box_icon{
+  width: 156rpx;
+  height: 156rpx;
+  margin-bottom: 18rpx;
+}

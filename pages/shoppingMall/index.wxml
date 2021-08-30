@@ -1,0 +1,31 @@
+<!--pages/shoppingMall/index.wxml-->
+<view class="container">
+  <view class="banner">
+    <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{3}}" wx:key="*this">
+          <swiper-item>
+            <image class="banner_image" src=""></image>
+          </swiper-item>
+        </block>
+      </swiper>
+   
+  </view>
+  <view class="exchange">
+    <text class="title">
+      积分兑换
+    </text>
+    <view class="all_list">
+      <view class="commodity_all" wx:for="{{12}}" wx:key="{{index}}">
+        <image class="comm_cover all_image" src=""></image>
+        <view class="all_bottom">
+          <view class="comm_title">卓大王系列</view>
+          <view class="price">
+            <text class="pre_price">8900</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

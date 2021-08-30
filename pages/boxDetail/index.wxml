@@ -1,0 +1,28 @@
+<!--pages/boxDetail/index.wxml-->
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{3}}" wx:key="*this">
+      <swiper-item>
+        <image class="banner_image" src=""></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="box_content">
+    <view class="title">
+      <text class="category">BOB色彩系列</text>
+      <view class="box_title">POP MART 泡泡玛特</view>
+    </view>
+    <image class="share_icon" src="/images/icon_share@2x.png"></image>
+  </view>
+  <view class="detail_content">
+    <view class="tips">商品详情</view>
+    <image class="detail_image" src=""></image>
+  </view>
+</view>
+<view class="footer">
+  <view class="box_price">
+    <view class="price">89.00</view>
+    <view class="integral">8900</view>
+  </view>
+  <view class="buy_btn">立即购买</view>
+</view>

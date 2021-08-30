@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shoppingMall/index",
+    "pages/showcase/index",
+    "pages/my/index",
+    "pages/drawBlindBox/index",
+    "pages/openBox/index",
+    "pages/boxDetail/index",
+    "pages/paySuccess/index",
+    "pages/guess/index",
+    "pages/friendHelp/index",
+    "pages/integralDetail/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "秋叶盲盒",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#D3D3D3",
+    "selectedColor": "#1F1F52",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/bottom_bar_home_nor@2x.png",
+        "selectedIconPath": "/images/bottom_bar_home_pre@2x.png"
+      },
+      {
+        "pagePath": "pages/shoppingMall/index",
+        "text": "商城",
+        "iconPath": "/images/bottom_bar_shop_nor@2x.png",
+        "selectedIconPath": "/images/bottom_bar_shop_pre@2x.png"
+      },
+      {
+        "pagePath": "pages/showcase/index",
+        "text": "陈列柜",
+        "iconPath": "/images/bottom_bar_guizi_nor@2x.png",
+        "selectedIconPath": "/images/bottom_bar_guizi_pre@2x.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/images/bottom_bar_me_nor@2x.png",
+        "selectedIconPath": "/images/bottom_bar_me_pre@2x.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

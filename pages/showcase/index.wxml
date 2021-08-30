@@ -1,0 +1,18 @@
+<!--pages/showcase/index.wxml-->
+<view class="container">
+  <view class="tab">
+    <view class="tab_list {{tabIndex==0?'select':''}}" bindtap="selectTab" data-index='0'>已发货</view>
+    <view class="tab_list {{tabIndex==1?'select':''}}" bindtap="selectTab" data-index='1'>未发货</view>
+  </view>
+  <view class="exchange">
+    <view class="all_list">
+      <view class="commodity_all" wx:for="{{12}}" wx:key="{{index}}">
+        <image class="comm_cover all_image" src=""></image>
+        <view class="all_bottom">
+          <view class="comm_title">卓大王系列</view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

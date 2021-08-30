@@ -1,0 +1,68 @@
+/* pages/shoppingMall/index.wxss */
+.container{
+  margin: 32rpx;
+}
+
+.banner_image{
+  width: 100%;
+  height: 280rpx;
+  border-radius:24rpx;
+  background: #ddd;
+}
+.comm_cover {
+  width: 100%;
+  height: 332rpx;
+  background: #d0d0d0;
+  border-radius: 16rpx;
+  padding-bottom: 20rpx;
+}
+
+.comm_title {
+  font-size: 26rpx;
+  color: #1F1F52;
+  padding-bottom: 12rpx;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.pre_price {
+  font-size: 32rpx;
+  color: #FF2727;
+  font-weight: bold;
+}
+
+.pre_price::after {
+  content: '分';
+  font-size: 20rpx;
+  display: inline-block;
+  padding-left: 4rpx;
+}
+
+.all {
+  margin: 48rpx 32rpx;
+}
+
+.all_title {}
+
+.all_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.commodity_all {
+  margin-top: 16rpx;
+  margin-bottom: 18rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  width: 48%;
+}
+
+.all_bottom {
+  padding: 0 14rpx 16rpx;
+}

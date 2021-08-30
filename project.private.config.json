@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "商城",
+          "pathName": "pages/shoppingMall/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "陈列柜",
+          "pathName": "pages/showcase/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "抽盲盒",
+          "pathName": "pages/drawBlindBox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "开盒子",
+          "pathName": "pages/openBox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "盒子详情",
+          "pathName": "pages/boxDetail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "支付成功",
+          "pathName": "pages/paySuccess/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "竞猜",
+          "pathName": "pages/guess/index",
+          "query": "userType=0",
+          "scene": null
+        },
+        {
+          "name": "好友助力",
+          "pathName": "pages/friendHelp/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "积分明细",
+          "pathName": "pages/integralDetail/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

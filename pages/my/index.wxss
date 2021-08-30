@@ -1,0 +1,172 @@
+/* pages/my/index.wxss */
+
+.user {
+  display: flex;
+  z-index: 999;
+  position: relative;
+  align-items: flex-end;
+  margin: 30rpx 0rpx 30rpx 52rpx;
+}
+
+.user_avatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 156rpx;
+}
+
+.avatar {
+  width: 144rpx;
+  height: 144rpx;
+  margin-bottom: 32rpx;
+  background: #999;
+  border-radius: 100rpx;
+}
+
+.userName {
+  font-size: 40rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.data_left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 94rpx;
+}
+
+.data_left:nth-child(2) {
+  margin-right: 0;
+}
+
+.num {
+  font-size: 40rpx;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 10rpx;
+}
+
+.text {
+  font-size: 28rpx;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.more_icon {
+  width: 14rpx;
+  height: 24rpx;
+  padding-left: 6rpx;
+}
+
+.signIn {
+  background: #5233FF;
+  margin: 32rpx;
+  border-radius: 24rpx;
+  padding: 32rpx 46rpx 32rpx;
+}
+
+.sign_title {
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 16rpx;
+}
+
+.sign_progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.num {
+  display: flex;
+  
+  align-items: center;
+}
+
+.inte_num {
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.gray_num{
+  color: #B9ADFF;
+}
+
+.select_icon {
+  width: 32rpx;
+  height: 32rpx;
+  padding-top: 2rpx;
+}
+
+.gray {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 30rpx;
+  background: #B9ADFF;
+  display: block;
+}
+.line{
+  width: 38rpx;
+  height: 4rpx;
+  background: #B9ADFF;
+  display: block;
+}
+
+.inte_icon{
+  display: flex;
+  align-items: center;
+}
+
+.sign_btn{
+  width: 128rpx;
+  height: 64rpx;
+  text-align: center;
+  line-height: 64rpx;
+  color: #5233FF;
+  font-size: 26rpx;
+  background: #fff;
+  border-radius: 44rpx;
+}
+
+.my_list{
+  background: #fff;
+  border-radius: 24rpx;
+  margin: 0 32rpx 32rpx 32rpx;
+  padding: 48rpx 30rpx;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64rpx;
+}
+.list:nth-last-child(1){
+  margin-bottom: 0;
+}
+.list_left{
+  display: flex;
+  align-items: center;
+}
+.my_icon{
+  width: 36rpx;
+  height: 40rpx;
+  margin-right: 24rpx;
+}
+.item_name{
+  color: #222;
+  font-size: 32rpx;
+}

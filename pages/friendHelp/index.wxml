@@ -1,0 +1,46 @@
+<!--pages/openBox/index.wxml-->
+<view class="container">
+  <view class="success_tips">
+    <text class="tips">xxxx正在抽盒</text>
+    <text class="tips">快来帮他助力</text>
+  </view>
+
+  <view class="box_image">
+    <image src="/images/TB_01@2x.png"></image>
+  </view>
+
+  <view class="box_title">
+    <text class="title">BOB色彩系列</text>
+    <text class="num">NO 202109163232123-1</text>
+  </view>
+  <view class="help">
+    <view class="help_left">
+      <image src="" class="left_icon" wx:for="{{3}}"></image>
+      <view class="ellipsis">
+        <text class="cirle"></text>
+        <text class="cirle"></text>
+        <text class="cirle"></text>
+      </view>
+    </view>
+    <text class="help_tips">等27位好友已助力，还差x个</text>
+  </view>
+  <view class="buy_btn" bindtap="showModal">帮他助力</view>
+</view>
+<!-- 助力弹框 -->
+<view class="view-mask" bindtap="onClickDialogCenter" wx:if="{{showCenterrDialog}}" style="z-index:31 ">
+ 
+</view>
+<view class="zan-dialog {{ showCenterrDialog ? 'zan-dialog--show' : '' }}" wx:if="{{showCenterrDialog}}">
+    <view class="zan-dialog__container2">
+      <view class="body_left">
+        <image class="body_box_image" src="/images/TB_01@2x.png"></image>
+        <view class="title_content">
+          <text class="category">BOB色彩系列</text>
+          <view class="body_box_title">Sun And Trees</view>
+        </view>
+      </view>
+      <view class="tips_content"></view>
+      <view class="surplus_num">剩余提示2次</view>
+      <view class="know_btn" bindtap="onClickDialogCenter">知道了</view>
+    </view>
+  </view>
