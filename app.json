@@ -11,7 +11,8 @@
     "pages/paySuccess/index",
     "pages/guess/index",
     "pages/friendHelp/index",
-    "pages/integralDetail/index"
+    "pages/integralDetail/index",
+    "pages/myOrder/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

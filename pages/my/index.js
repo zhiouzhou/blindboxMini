@@ -28,6 +28,12 @@ Page({
   onLoad() {
     
   },
+  navigateTo(e){
+    let path = e.currentTarget.dataset.path
+    wx.navigateTo({
+      url: `/pages/${path}/index`,
+    })
+  },
   gotoDetail(){
     wx.navigateTo({
       url: '/pages/integralDetail/index',

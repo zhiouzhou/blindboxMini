@@ -1,0 +1,56 @@
+<!--pages/myOrder/index.wxml-->
+<view class="myOrder" wx:for="{{orderList}}" wx:key="id" bindtap="showModal" data-index="{{index}}">
+  <!-- <view class="order_content"> -->
+  <image src="/images/box_image.png" class="box_cover"></image>
+  <view class="box">
+    <view class="box_title">
+      <text class="title">{{item.boxTitle}}</text>
+      <text class="num">￥{{item.price}}</text>
+    </view>
+    <view class="price">
+      <text class="date">{{item.date}}</text>
+      <text
+        class="state state{{item.state}}">{{item.state===0?'未发货':item.state===1?'已发货':item.state===2?'已签收':'已退款'}}</text>
+    </view>
+  </view>
+
+  <!-- </view> -->
+</view>
+
+<!-- 详情弹框 -->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<!-- 从上至下的弹窗-->
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+  <view class="dialog_header">订单详情<image class="close_icon" bindtap="hideModal" src="/images/icon_xiangqing_close@2x.png"></image>
+  </view>
+  <view class="myOrder dialogOrder">
+    <image src="/images/box_image.png" class="box_cover"></image>
+    <view class="box">
+      <view class="box_title">
+        <text class="title">{{orderList[selectIndex].boxTitle}}</text>
+        <text class="num">￥{{orderList[selectIndex].price}}</text>
+      </view>
+      <view class="price">
+        <text class="date">{{orderList[selectIndex].date}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="address">
+    <view class="address_tips">发货地址</view>
+    <view class="address_content">
+      <view class="address_user">
+        <text class="user">张三</text>
+        <text class="phone">13000000000</text>
+      </view>
+      <view class="addressDetail">北京市 海淀区 成府路20号 xxxxxxxx</view>
+    </view>
+    <view class="message">
+      <view class="address_tips">物流信息</view>
+      <view class="message_content">
+        <text class="message_text">中通速递：ZT1234567890</text>
+        <text class="message_state">运输中</text>
+      </view>
+    </view>
+  </view>
+</view>

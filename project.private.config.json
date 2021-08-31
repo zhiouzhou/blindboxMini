@@ -71,6 +71,12 @@
           "pathName": "pages/integralDetail/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "我的订单",
+          "pathName": "pages/myOrder/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

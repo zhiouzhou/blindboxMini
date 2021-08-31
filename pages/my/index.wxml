@@ -55,7 +55,7 @@
         <image class="more_icon" src="/images/icon_more2@2x.png"></image>
       </view>
       <view class="list">
-        <view class="list_left">
+        <view class="list_left" bindtap="navigateTo" data-path="myOrder">
           <image class="my_icon" src="/images/icon_me_order@2x.png"></image>
           <text class="item_name">我的订单</text>
         </view>
