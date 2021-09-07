@@ -1,0 +1,55 @@
+<!--pages/myAddress/addAddress.wxml-->
+<view class="addAdress">
+  <view class="item">
+    <view class="item_Left">
+      <text class="label">收货人</text>
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="bindInput" data-type="username" value="{{username}}" auto-focus
+          placeholder="名字" />
+      </view>
+    </view>
+    <!-- <image src="/images/icon_more2@2x.png" class="more_icon"></image> -->
+  </view>
+
+  <view class="item">
+    <view class="item_Left">
+      <text class="label">手机号</text>
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="bindInput" data-type="phone" value="{{phone}}" auto-focus
+          placeholder="手机号" />
+      </view>
+    </view>
+    <!-- <image src="/images/icon_more2@2x.png" class="more_icon"></image> -->
+  </view>
+
+  <view class="item">
+    <view class="item_Left">
+      <text class="label">选择地区</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="normalPicker" wx:if="{{region.length===0}}">
+          省、市、区、街道
+        </view>
+        <view class="picker" wx:else>{{province}} {{city}} {{area}}</view>
+      </picker>
+    </view>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+
+  <view class="item">
+    <view class="item_Left">
+      <text class="label">详细地址</text>
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" bindinput="bindInput" data-type="addressDetail" value="{{addressDetail}}" auto-focus
+          placeholder="小区楼栋/乡村名称" />
+      </view>
+    </view>
+    <!-- <image src="/images/icon_more2@2x.png" class="more_icon"></image> -->
+  </view>
+  <view class="defaultAddress">
+    <text class="default_label">设为默认地址</text>
+    <switch checked="{{default}}" bindchange="setDefalut" />
+  </view>
+  
+</view>
+<view class="save" bindtap="saveAddress">保存</view>
+<view class="delete" wx:if="{{pageType==='edit'}}">删除</view>

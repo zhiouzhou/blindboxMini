@@ -1,0 +1,99 @@
+/* pages/myAddress/index.wxss */
+.address {
+  background: #fff;
+  margin: 24rpx 32rpx;
+  border-radius: 24px;
+  padding: 30rpx 32rpx 24rpx;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nameAndPhone {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 28rpx;
+  font-weight: bold;
+  padding-right: 18rpx;
+}
+
+.phone {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.edit_address {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.addressDetail {
+  font-size: 20rpx;
+  width: 356rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  color: #333;
+  padding: 22rpx 0 30rpx;
+}
+
+.operate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  border-top: 2rpx solid #f0f0f0;
+}
+
+.defalut {
+  display: flex;
+  align-items: center;
+}
+
+.select_icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 12rpx;
+  /* border: 2rpx solid transparent; */
+}
+
+.normal_select {
+  width: 28rpx;
+  height: 28rpx;
+  border: 2rpx solid #ccc;
+  border-radius: 16rpx;
+  margin-right: 12rpx;
+}
+
+.default_text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.delete {
+  font-size: 24rpx;
+  color: #222;
+}
+
+.addAddress {
+  position: fixed;
+  bottom: 68rpx;
+  left: 40rpx;
+  right: 40rpx;
+  width: 670rpx;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 98rpx;
+  height: 98rpx;
+  background: #5233FF;
+  border-radius: 49rpx;
+  color: #fff;
+  font-size: 32rpx;
+}

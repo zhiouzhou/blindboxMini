@@ -47,21 +47,21 @@
         </view>
         <image class="more_icon" src="/images/icon_more2@2x.png"></image>
       </view>
-      <view class="list">
+      <view class="list"  bindtap="navigateTo" data-path="myAddress">
         <view class="list_left">
           <image class="my_icon" src="/images/icon_me_dizhi@2x.png"></image>
           <text class="item_name">地址管理</text>
         </view>
         <image class="more_icon" src="/images/icon_more2@2x.png"></image>
       </view>
-      <view class="list">
-        <view class="list_left" bindtap="navigateTo" data-path="myOrder">
+      <view class="list" bindtap="navigateTo" data-path="myOrder">
+        <view class="list_left">
           <image class="my_icon" src="/images/icon_me_order@2x.png"></image>
           <text class="item_name">我的订单</text>
         </view>
         <image class="more_icon" src="/images/icon_more2@2x.png"></image>
       </view>
-      <view class="list">
+      <view class="list" bindtap="navigateTo" data-path="myInvite">
         <view class="list_left">
           <image class="my_icon" src="/images/icon_me_yaoqing@2x.png"></image>
           <text class="item_name">我的邀请</text>
@@ -77,7 +77,7 @@
         </view>
         <image class="more_icon" src="/images/icon_more2@2x.png"></image>
       </view>
-      <view class="list">
+      <view class="list"  bindtap="navigateTo" data-path="commonProblem">
         <view class="list_left">
           <image class="my_icon" src="/images/icon_me_problem@2x.png"></image>
           <text class="item_name">常见问题</text>

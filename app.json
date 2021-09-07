@@ -12,7 +12,11 @@
     "pages/guess/index",
     "pages/friendHelp/index",
     "pages/integralDetail/index",
-    "pages/myOrder/index"
+    "pages/myOrder/index",
+    "pages/myAddress/index",
+    "pages/myAddress/addAddress",
+    "pages/myInvite/index",
+    "pages/commonProblem/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

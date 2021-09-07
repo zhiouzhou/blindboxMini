@@ -1,0 +1,81 @@
+/* pages/myAddress/addAddress.wxss */
+page {
+  background: #fff;
+}
+
+.addAdress {
+  padding: 0 32rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+
+.item_Left {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-size: 28rpx;
+  color: #222;
+  width: 144rpx;
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  font-size: 28rpx;
+
+}
+
+.picker {
+  font-size: 28rpx;
+}
+
+.normalPicker {
+  color: #999;
+}
+
+.more_icon {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.defaultAddress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 0;
+}
+
+.default_label {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.save {
+  margin: 40rpx;
+  height: 98rpx;
+  background: #5233FF;
+  border-radius: 49rpx;
+  line-height: 98rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.delete{
+  margin: 40rpx;
+  /* height: 98rpx; */
+  background: #fff;
+  border-radius: 49rpx;
+  /* line-height: 98rpx; */
+  text-align: center;
+  font-size: 28rpx;
+  color: #666666;
+}

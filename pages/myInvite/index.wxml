@@ -1,0 +1,8 @@
+<!--pages/myInvite/index.wxml-->
+<view class="myInvite" wx:for="{{6}}">
+  <image src="/images/avatar_default.jpeg" class="avatar"></image>
+  <view class="userInfo">
+    <text class="name">周大弟呀</text>
+    <text class="date">2021-06-15 13:40</text>
+  </view>
+</view>

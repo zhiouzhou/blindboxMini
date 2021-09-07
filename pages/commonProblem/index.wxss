@@ -1,0 +1,24 @@
+/* pages/commonProblem/index.wxss */
+
+.problem{
+  margin: 24rpx 32rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 0 32rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.label{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.more_icon{
+  width: 14rpx;
+  height: 24rpx;
+}

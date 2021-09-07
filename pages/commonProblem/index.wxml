@@ -1,0 +1,20 @@
+<!--pages/commonProblem/index.wxml-->
+<view class="problem">
+  <view class="item">
+    <text class="label">盲盒相关问题</text>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+  <view class="item">
+    <text class="label">发货相关问题</text>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+  <view class="item">
+    <text class="label">包邮相关问题</text>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+  <view class="item">
+    <text class="label">售后相关问题</text>
+    <image src="/images/icon_more2@2x.png" class="more_icon"></image>
+  </view>
+  
+</view>

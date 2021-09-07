@@ -77,6 +77,24 @@
           "pathName": "pages/myOrder/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "地址管理",
+          "pathName": "pages/myAddress/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "新建地址",
+          "pathName": "pages/myAddress/addAddress",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的邀请",
+          "pathName": "pages/myInvite/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

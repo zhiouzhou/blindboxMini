@@ -1,0 +1,22 @@
+<!--pages/myAddress/index.wxml-->
+<view class="address" wx:for="{{addressList}}" wx:key="id">
+  <view class="userInfo">
+    <view class="nameAndPhone">
+      <text class="name">{{item.username}}</text>
+      <text class="phone">{{item.phone}}</text>
+    </view>
+    <image class="edit_address" src="/images/icon_edit@2x.png"  bindtap="addAddress" data-type="edit" data-item="{{item}}"></image>
+  </view>
+  <view class="addressDetail">{{item.province}} {{item.city}} {{item.area}} {{item.addressDetail}}</view>
+  <view class="operate">
+    <view class="defalut" bindtap="selectDefalut" data-index="{{index}}">
+      <image class="select_icon" wx:if="{{item.default}}" src="/images/icon_xuanhong@2x.png"></image>
+      <view class="normal_select" wx:else></view>
+      <text class="default_text">默认地址</text>
+    </view>
+    <view class="delete">删除</view>
+  </view>
+</view>
+<view class="addAddress" bindtap="addAddress" data-type="add">
+  新建地址
+</view>
